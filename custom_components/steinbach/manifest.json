@@ -1,0 +1,14 @@
+{
+  "domain": "steinbach",
+  "name": "Steinbach Pool",
+  "codeowners": [
+    "@BirknerAlex"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/BirknerAlex/hacs_steinbach/blob/main/README.md",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/BirknerAlex/hacs_steinbach/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

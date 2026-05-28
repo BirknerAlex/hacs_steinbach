@@ -1,0 +1,82 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Steinbach Pool (Tuya Cloud)",
+        "description": "Gib die Access ID und das Access Secret deines Tuya-IoT-Cloud-Projekts ein und wähle das Rechenzentrum (Region) deines Projekts.",
+        "data": {
+          "access_id": "Access ID",
+          "access_secret": "Access Secret",
+          "region": "Region"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Steinbach Pool neu anmelden",
+        "description": "Die Tuya-Zugangsdaten sind nicht mehr gültig. Gib die Access ID und das Access Secret deines Projekts erneut ein.",
+        "data": {
+          "access_id": "Access ID",
+          "access_secret": "Access Secret",
+          "region": "Region"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "invalid_auth": "Ungültige Anmeldedaten"
+    },
+    "abort": {
+      "already_configured": "Konto ist bereits konfiguriert",
+      "reauth_successful": "Neuanmeldung erfolgreich"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Steinbach Pool Einstellungen",
+        "data": {
+          "scan_interval": "Abfrageintervall (Sekunden)"
+        }
+      }
+    }
+  },
+  "selector": {
+    "region": {
+      "options": {
+        "eu": "Zentraleuropa (eu)",
+        "us": "Westamerika (us)",
+        "cn": "China (cn)",
+        "in": "Indien (in)"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "inlet_temperature": { "name": "Vorlauftemperatur" },
+      "outlet_temperature": { "name": "Rücklauftemperatur" },
+      "ambient_temperature": { "name": "Umgebungstemperatur" },
+      "suction_temperature": { "name": "Sauggastemperatur" },
+      "discharge_temperature": { "name": "Entladungstemperatur" },
+      "coil_temperature": { "name": "Verdampfertemperatur" },
+      "operating_frequency": { "name": "Verdichterfrequenz" },
+      "expansion_valve": { "name": "Expansionsventil-Öffnung" }
+    },
+    "binary_sensor": {
+      "fault": { "name": "Störung" }
+    },
+    "number": {
+      "target_temperature": { "name": "Zieltemperatur" }
+    },
+    "select": {
+      "mode": {
+        "name": "Modus",
+        "state": {
+          "Heating": "Heizen",
+          "Cooling": "Kühlen"
+        }
+      }
+    },
+    "switch": {
+      "power": { "name": "Ein/Aus" }
+    }
+  }
+}

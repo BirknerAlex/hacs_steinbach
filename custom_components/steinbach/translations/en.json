@@ -1,0 +1,82 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Steinbach Pool (Tuya Cloud)",
+        "description": "Enter the Access ID and Access Secret from your Tuya IoT cloud project, and pick the data center region your project uses.",
+        "data": {
+          "access_id": "Access ID",
+          "access_secret": "Access Secret",
+          "region": "Region"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Steinbach Pool",
+        "description": "The Tuya credentials are no longer valid. Re-enter your project's Access ID and Access Secret.",
+        "data": {
+          "access_id": "Access ID",
+          "access_secret": "Access Secret",
+          "region": "Region"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication"
+    },
+    "abort": {
+      "already_configured": "Account is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Steinbach Pool settings",
+        "data": {
+          "scan_interval": "Poll interval (seconds)"
+        }
+      }
+    }
+  },
+  "selector": {
+    "region": {
+      "options": {
+        "eu": "Central Europe (eu)",
+        "us": "Western America (us)",
+        "cn": "China (cn)",
+        "in": "India (in)"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "inlet_temperature": { "name": "Inlet temperature" },
+      "outlet_temperature": { "name": "Outlet temperature" },
+      "ambient_temperature": { "name": "Ambient temperature" },
+      "suction_temperature": { "name": "Suction temperature" },
+      "discharge_temperature": { "name": "Discharge temperature" },
+      "coil_temperature": { "name": "Coil temperature" },
+      "operating_frequency": { "name": "Compressor frequency" },
+      "expansion_valve": { "name": "Expansion valve opening" }
+    },
+    "binary_sensor": {
+      "fault": { "name": "Fault" }
+    },
+    "number": {
+      "target_temperature": { "name": "Target temperature" }
+    },
+    "select": {
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "Heating": "Heat",
+          "Cooling": "Cool"
+        }
+      }
+    },
+    "switch": {
+      "power": { "name": "Power" }
+    }
+  }
+}
