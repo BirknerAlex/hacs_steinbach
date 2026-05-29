@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/BirknerAlex/hacs_steinbach/compare/v1.0.0...v1.0.1) (2026-05-29)
+
+### Fixes
+
+* add in-repo brand assets to pass HACS validation ([89a3082](https://github.com/BirknerAlex/hacs_steinbach/commit/89a3082e2d1bc15a67e90caa3763fdc0b4821ebf))
+
 ## [1.0.0](https://github.com/BirknerAlex/hacs_steinbach/compare/...v1.0.0) (2026-05-28)
 
 ### Features
